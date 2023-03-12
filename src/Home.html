@@ -32,64 +32,112 @@
                 </div>
             </div>
 
-            <div class="flex items-center space-x-6 font-medium">
-                <a href="">
-                    <img class="w-[26px]" src="/Assets/images/search.png" alt="" />
-                </a>
+            <div class="flex">
+                <div class="flex items-center space-x-6 font-medium">
+                    <a href="">
+                        <img class="w-[26px]" src="/Assets/images/search.png" alt="search" />
+                    </a>
 
-                <a href="" class="flex">
-                    <img class="w-[26px]" src="/Assets/images/plus.png" alt="" />
-                    <h2>MY LIST</h2>
-                </a>
+                    <div class="flex cursor-pointer">
+                        <button> <img class="w-[26px]" src="/Assets/images/plus.png" alt="add" /></button>
+                        <h2>MY LIST</h2>
+                    </div>
 
-                <a href="" class="flex">
-                    <img class="w-[17px] h-[20px]" src="/Assets/images/power.png" alt="" />
-                    <h2>LOGOUT</h2>
+                    <div class="flex cursor-pointer">
+                        <button>
+                            <img class="w-[17px] h-[20px]" src="/Assets/images/power.png" alt="logout" />
+                        </button>
+                        <h2>LOGOUT</h2>
+                    </div>
 
-                </a>
+                    <div>
+                        <button onclick="document.getElementById('modal').style.display='block'"><img class="w-[23px]"
+                                src="/Assets/images/setting.png" alt="setting" />
+                        </button>
+                        <!-- onClick setting -->
+                        <div class="modal">
+                            <div class="space-y-5 cursor-pointer p-5 hidden bg-[#fff] shadow-2xl text-[black] w-[20rem] h-[40rem]"
+                                id="modal">
+                                <div class="flex space-x-10 items-center">
+                                    <h1 class="text-[1.3rem]">Theme Customizer</h1>
+                                    <span class="text-[35px] font-extralight"
+                                        onclick="document.getElementById('modal').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                </div>
+                                <hr>
 
-                <div>
-                    <button onclick="document.getElementById('modal').style.display='block'"><img class="w-[23px]"
-                            src="/Assets/images/setting.png" alt="" />
-                    </button>
-                    <div class="modal">
-                        <div class="space-y-5 cursor-pointer p-5 hidden bg-[#fff] shadow-2xl text-[black] w-[20rem] h-[40rem]"
-                            id="modal">
-                            <div class="flex space-x-10 items-center">
-                                <h1 class="text-[1.3rem]">Theme Customizer</h1>
-                                <span class="text-[35px] font-extralight"
-                                    onclick="document.getElementById('modal').style.display='none'" class="close"
-                                    title="Close Modal">&times;</span>
-                            </div>
-                            <hr>
+                                <h2 class="text-[17px]">Theme Variation</h2>
+                                <hr>
 
-                            <h2 class="text-[17px]">Theme Variation</h2>
-                            <hr>
+                                <div class="flex space-x-2">
+                                    <input type="radio" id="light">
+                                    <label for="html">Light</label><br>
+                                    <input type="radio" id="dark">
+                                    <label for="css">Dark</label><br>
+                                </div>
+                                <hr>
 
-                            <div class="flex space-x-2">
-                                <input type="radio" id="light">
-                                <label for="html">Light</label><br>
-                                <input type="radio" id="dark">
-                                <label for="css">Dark</label><br>
-                            </div>
-                            <hr>
-
-                            <h2>Theme Colors</h2>
-                            <hr>
-                            <div class="flex space-x-4">
-                                <div class="w-[44px] h-[49px] rounded-[10px] bg-[#6610f2]"></div>
-                                <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9c27b0]"></div>
-                                <div class="w-[44px] h-[49px] rounded-[10px] bg-[#09a257]"></div>
-                                <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9d3939]"></div>
+                                <h2>Theme Colors</h2>
+                                <hr>
+                                <div class="flex space-x-4">
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#6610f2]"></div>
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9c27b0]"></div>
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#09a257]"></div>
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9d3939]"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <!-- onClick setting -->
         </div>
     </nav>
+
+
+
+    <div>
+        <div class="bg-[#f9f9f9] p-7">
+            <div class="px-24">
+                <div class="flex space-x-[73%] items-center mb-3">
+                    <h1 class="text-[1.6rem] font-medium">Search Videos</h1>
+                    <span class="text-[35px] font-extralight"
+                        onclick="document.getElementById('modal').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div>
+                <div class="search">
+                    <img src="/Assets/images/search.png" alt="" class="icon">
+                    <input type="text" placeholder='Type to Search' class="input">
+                </div>
+            </div>
+        </div>
+
+        <div class="px-16">
+            <h2>Explore by categories</h2>
+            <div class="flex space-x-5">
+                <div class="flex space-x-4 w-[23%] p-[37px] rounded-[10px] bg-[#21ad61]">
+                    <p>Web <br> Shows</p>
+                    <img src="/Assets/images/slide-show.png" alt="" class="w-[50px]">
+                </div>
+                <div class="flex space-x-4 w-[23%] p-[39px] rounded-[10px] bg-[#21ad61]">
+                    <p>TV Shows</p>
+                    <img src="/Assets/images/radio.png" alt="" class="w-[50px]">
+                </div>
+                <div class="flex space-x-4 w-[23%] p-[39px] rounded-[10px] bg-[#21ad61]">
+                    <p>Movies</p>
+                    <img src="/Assets/images/movie.png" alt="" class="w-[50px]">
+                </div>
+                <div class="flex space-x-4 w-[23%] p-[39px] rounded-[10px] bg-[#21ad61]">
+                    <p>Music</p>
+                    <img src="/Assets/images/musical-note.png" alt="" class="w-[50px]">
+                </div>
+                <div class="flex space-x-4 w-[23%] p-[39px] rounded-[10px] bg-[#21ad61]">
+                    <p>Actors</p>
+                    <img src="/Assets/images/actor.png" alt="" class="w-[50px]">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="/Assets/js/index.js"></script>
