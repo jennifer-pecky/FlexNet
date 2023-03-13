@@ -34,9 +34,11 @@
 
             <div class="flex">
                 <div class="flex items-center space-x-6 font-medium">
-                    <a href="">
+
+                    <button onclick="document.getElementById('Search-modal').style.display='block'">
                         <img class="w-[26px]" src="/Assets/images/search.png" alt="search" />
-                    </a>
+                    </button>
+
 
                     <div class="flex cursor-pointer">
                         <button> <img class="w-[26px]" src="/Assets/images/plus.png" alt="add" /></button>
@@ -94,194 +96,199 @@
         </div>
     </nav>
 
+    <!-- SEARCH-MODAL -->
 
-
-    <div>
-        <div class="bg-[#f9f9f9] p-7">
-            <div class="px-24">
-                <div class="flex space-x-[73%] items-center mb-3">
-                    <h1 class="text-[1.6rem] font-medium">Search Videos</h1>
-                    <span class="text-[35px] font-extralight"
-                        onclick="document.getElementById('modal').style.display='none'" class="close"
-                        title="Close Modal">&times;</span>
-                </div>
-                <div class="search">
-                    <img src="/Assets/images/search.png" alt="" class="icon">
-                    <input type="text" placeholder='Type to Search' class="input">
+    <div class="hidden" id="Search-modal">
+        <div class="pop-up">
+            <div class="bg-[#f9f9f9] p-7">
+                <div class="px-24">
+                    <div class="flex space-x-[73%] items-center mb-3">
+                        <h1 class="text-[1.6rem] font-medium">Search Videos</h1>
+                        <span class="text-[35px] font-extralight cursor-pointer"
+                            onclick="document.getElementById('Search-modal').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                    </div>
+                    <div class="search">
+                        <img src="/Assets/images/search.png" alt="" class="icon">
+                        <input type="text" placeholder='Type to Search' class="input">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class=" max-w-full">
-            <div class="px-28 p-10">
-                <h2 class="text-[1.3rem] font-medium">Explore by categories</h2>
+            <div class=" max-w-full bg-[#fff]">
+                <div class="px-28 p-10">
+                    <h2 class="text-[1.3rem] font-medium">Explore by categories</h2>
+                    <br>
+                    <div class="flex space-x-5 text-[#fff]">
+                        <div
+                            class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#21ad61] items-center space-x-7">
+                            <p>Web <br> Shows</p>
+                            <img src="/Assets/images/slide-show.png" alt="" class="w-[50px]">
+                        </div>
+                        <div
+                            class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#ed4264] items-center space-x-5 whitespace-nowrap">
+                            <p class="">TV Shows</p>
+                            <img src="/Assets/images/radio.png" alt="" class="w-[50px]">
+                        </div>
+                        <div
+                            class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#2ea5c2] items-center space-x-7">
+                            <p>Movies</p>
+                            <img src="/Assets/images/movie.png" alt="" class="w-[50px]">
+                        </div>
+                        <div
+                            class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#723da6] items-center space-x-7">
+                            <p>Music</p>
+                            <img src="/Assets/images/musical-note.png" alt="" class="w-[50px]">
+                        </div>
+                        <div
+                            class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#fdae00] items-center space-x-7">
+                            <p>Actors</p>
+                            <img src="/Assets/images/actor.png" alt="" class="w-[50px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-28 p-9 bg-[#fff]">
+                <div class="text-[1.3rem] font-medium">
+                    <h1>Trending Searches</h1>
+                </div>
                 <br>
-                <div class="flex space-x-5 text-[#fff]">
-                    <div
-                        class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#21ad61] items-center space-x-7">
-                        <p>Web <br> Shows</p>
-                        <img src="/Assets/images/slide-show.png" alt="" class="w-[50px]">
+                <div class="grid grid-cols-4">
+
+                    <div class="space-y-5">
+                        <button class="flex space-x-2 hover:bg-[#00000040]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Hollywood New Movies</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>The Avengers</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Spider Man Black</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>New Bollywood Songs</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%] h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Tv Reality Shows</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <P>Crime Thriller Shows</P>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Romantic Movies</p>
+                        </button>
                     </div>
-                    <div
-                        class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#ed4264] items-center space-x-5 whitespace-nowrap">
-                        <p class="">TV Shows</p>
-                        <img src="/Assets/images/radio.png" alt="" class="w-[50px]">
+
+
+
+                    <div class="space-y-5">
+                        <button class="flex space-x-2 hover:bg-[#00000040]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Hollywood New Movies</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>The Avengers</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Spider Man Black</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>New Bollywood Songs</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%] h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Tv Reality Shows</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <P>Crime Thriller Shows</P>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Romantic Movies</p>
+                        </button>
                     </div>
-                    <div
-                        class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#2ea5c2] items-center space-x-7">
-                        <p>Movies</p>
-                        <img src="/Assets/images/movie.png" alt="" class="w-[50px]">
+
+                    <div class="space-y-5">
+                        <button class="flex space-x-2 hover:bg-[#00000040]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Hollywood New Movies</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>The Avengers</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Spider Man Black</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>New Bollywood Songs</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%] h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Tv Reality Shows</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <P>Crime Thriller Shows</P>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Romantic Movies</p>
+                        </button>
                     </div>
-                    <div
-                        class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#723da6] items-center space-x-7">
-                        <p>Music</p>
-                        <img src="/Assets/images/musical-note.png" alt="" class="w-[50px]">
-                    </div>
-                    <div
-                        class="flex w-[18%] p-[30px] font-bold text-[1.3rem] rounded-[10px] bg-[#fdae00] items-center space-x-7">
-                        <p>Actors</p>
-                        <img src="/Assets/images/actor.png" alt="" class="w-[50px]">
+
+                    <div class="space-y-5">
+                        <button class="flex space-x-2 hover:bg-[#00000040]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Hollywood New Movies</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>The Avengers</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Spider Man Black</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>New Bollywood Songs</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%] h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Tv Reality Shows</p>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <P>Crime Thriller Shows</P>
+                        </button>
+                        <button class="flex space-x-2 hover:bg-[#00000040] w-[80%]  h-[45px] p-2">
+                            <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
+                            <p>Romantic Movies</p>
+                        </button>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="px-28 p-9">
-            <div class="text-[1.3rem] font-medium">
-                <h1>Trending Searches</h1>
-            </div>
-            <br>
-            <div class="grid grid-cols-4">
-                <div class="space-y-5">
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Hollywood New Movies</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>The Avengers</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Spider Man Black</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>New Bollywood Songs</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Tv Reality Shows</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <P>Crime Thriller Shows</P>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Romantic Movies</p>
-                    </button>
-                </div>
-
-
-                <div class="space-y-5">
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Hollywood New Movies</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>The Avengers</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Spider Man Black</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>New Bollywood Songs </p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Tv Reality SHows</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Crime Thriller Shows</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Romantic Movies</p>
-                    </button>
-                </div>
-
-
-                <div class="space-y-5">
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Hollywood New Movies</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>The Avengers</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Spider Man Black</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>New Bollywood Songs</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Tv Reality Shows</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <P>Crime Thriller Shows</P>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Romantic Movies</p>
-                    </button>
-                </div>
-
-                <div class="space-y-5">
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Hollywood New Movies</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>The Avengers</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Spider Man Black</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>New Bollywood Songs</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Tv Reality Shows</p>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <P>Crime Thriller Shows</P>
-                    </button>
-                    <button class="flex space-x-2">
-                        <img src="/Assets/images/up-arrow.png" alt="" class="w-[23px]">
-                        <p>Romantic Movies</p>
-                    </button>
-                </div>
             </div>
 
         </div>
-
     </div>
+
+    <!-- LIST MODAL -->
 
 
     <script src="/Assets/js/index.js"></script>
