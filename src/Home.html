@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="bg-[red] p-5">
+    <nav class="bg-[red] p-4">
         <div class="flex  justify-between">
             <div class="flex space-x-8 items-center">
                 <div class="flex space-x-2">
@@ -22,14 +22,77 @@
                     <h1 class="text-[#fff] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
                 </div>
                 <div class="text-[#fff]">
-                    <ul class="flex space-x-6 cursor-pointer">
-                        <li><a href="#"></a>HOME</li>
-                        <li><a href="#"></a>TV SHOWS</li>
-                        <li><a href="#"></a>WEB SHOWS</li>
-                        <li><a href="#"></a>MOVIES</li>
-                        <li><a href="#"></a>CHANNELS</li>
-                        <li><a href="#"></a>MUSIC</li>
-                        <li><a href="#"></a>BUZZ</li>
+                    <ul class="flex space-x-6">
+                        <li class="hover:bg-[#00000040]"><a href="#">HOME</a></li>
+                        <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer">
+                            <a href="#">TV SHOWS</a>
+                            <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
+                                href="#">WEB SHOWS</a>
+                            <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
+                                href="#">MOVIES</a>
+                            <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
+                                    </li>
+                                    <li class="py-1"><a href="#"
+                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">CHANNELS</a></li>
+                        <li><a href="#">MUSIC</a></li>
+                        <li><a href="#">BUZZ</a></li>
                     </ul>
                 </div>
             </div>
@@ -293,7 +356,7 @@
 
     <!-- LIST MODAL -->
 
-    <div id="list" class="">
+    <div id="list" class="hidden">
         <div class="bg-[#f9f9f9]">
             <div class="flex px-20 p-10 space-x-10">
                 <div class="space-y-3">
@@ -680,8 +743,8 @@
             </div>
 
 
-            <div class="foot">
-                <div class="items-center flex flex-col p-10">
+            <div class="">
+                <div class="items-center flex flex-col p-10 foot">
                     <p class="text-[1rem] font-medium ">2023. WWW.FlixNet.in|All rights reserved</p>
                 </div>
             </div>

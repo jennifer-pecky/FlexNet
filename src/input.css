@@ -73,83 +73,11 @@ body {
     border-radius: 15px;
 }
 
-
-
-/* <div class="flex px-24">
-<div class="max-w-full">
-    <div class="flex space-x-2">
-        <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
-        <h1 class="text-[red] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
-    </div>
-    <div>
-        <div class=" space-y-4">
-            <h1 class="text-[1.6rem] font-medium">About Us</h1>
-            <p class="text-[rgb(138,138,138)]">FlixNet is a video streaming app <br> that offers
-                thousands of hours of <br> premium. exclusive and orginal <br> content from leading
-                Producers
-                and <br> Publishers. The platform lays focus <br> on Exclusive Orginal Content with
-                <br>
-                emphasis
-            </p>
-        </div>
-    </div>
-
-    <div>
-        <button class="text-[red] hover:text-[blue]">
-            Read More
-        </button>
-    </div>
-</div>
-<div class="grid grid-cols-3 gap-8">
-    <div class="space-y-3">
-        <h1 class="text-[1.3rem] font-semibold">Explore</h1>
-        <div class="leading-normal text-sm space-y-3 text-[#8a8a8a]">
-            <div>
-                <button class=" hover:text-red-500 hover:underline">HOME</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">WEB SHOWS</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">MOVIES</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">TV SHOWS</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">MUSIC</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">CHANNELS</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">BUZZ</button>
-            </div>
-        </div>
-    </div>
-    <div class="space-y-3">
-        <h1 class="text-[1.3rem] font-semibold">Company</h1>
-        <div class="leading-normal text-sm space-y-3 text-[#8a8a8a]">
-            <div>
-                <butto class=" hover:text-red-500 hover:underline" n>About Us </button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">Contact Us</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">FAQ</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">Privacy</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">Terms</button>
-            </div>
-            <div>
-                <button class=" hover:text-red-500 hover:underline">Complaints</button>
-            </div>
-        </div>
-    </div>
-
-</div>
-</div> */
+.foot {
+    /* width: 1089px; */
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2%;
+    border: 2px solid #f9f9f9;
+}
