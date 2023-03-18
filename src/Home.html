@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="/Assets/images/favicon.png.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/input.css">
 
 
@@ -14,153 +17,181 @@
 </head>
 
 <body>
-    <nav class="bg-[red] p-4">
-        <div class="flex  justify-between">
-            <div class="flex space-x-8 items-center">
-                <div class="flex space-x-2">
-                    <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
-                    <h1 class="text-[#fff] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
-                </div>
-                <div class="text-[#fff]">
-                    <ul class="flex space-x-6">
-                        <li class="hover:bg-[#00000040]"><a href="#">HOME</a></li>
-                        <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer">
-                            <a href="#">TV SHOWS</a>
-                            <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
-                                <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
-                                href="#">WEB SHOWS</a>
-                            <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
-                                <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
-                                href="#">MOVIES</a>
-                            <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
-                                <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
-                                    </li>
-                                    <li class="py-1"><a href="#"
-                                            class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#">CHANNELS</a></li>
-                        <li><a href="#">MUSIC</a></li>
-                        <li><a href="#">BUZZ</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="flex">
-                <div class="flex items-center space-x-6 font-medium">
-
-                    <button onclick="document.getElementById('Search-modal').style.display='block'">
-                        <img class="w-[26px]" src="/Assets/images/search.png" alt="search" />
-                    </button>
-
-
-                    <div class="flex cursor-pointer">
-                        <button onclick="document.getElementById('list').style.display='block'">
-                            <img class="w-[26px]" src="/Assets/images/plus.png" alt="add" /></button>
-                        <h2 onclick="document.getElementById('list').style.display='block'">MY LIST</h2>
+    <header class="bg-[rgb(255,0,0)]">
+        <nav class=" p-4 mx-auto">
+            <div class="flex  justify-between">
+                <div class="flex space-x-8 items-center">
+                    <div class="flex space-x-2">
+                        <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
+                        <h1 class="text-[#fff] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
                     </div>
-
-                    <div class="flex cursor-pointer">
-                        <button>
-                            <img class="w-[17px] h-[20px]" src="/Assets/images/power.png" alt="logout" />
-                        </button>
-                        <h2>LOGOUT</h2>
+                    <div
+                        class="md:static text-[#fff] absolute bg-[#212529] min-h-[60vh] left-0 top-[10%] w-[40%] flex md:items-center  px-5">
+                        <ul class="flex space-x-6 md:flex-row flex-col md:gap-[4vw] gap-7">
+                            <li class=""><a href="#home">HOME</a></li>
+                            <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer">
+                                <a href="#">TV SHOWS</a>
+                                <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                    <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">DRAMA</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
+                                    href="#">WEB SHOWS</a>
+                                <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                    <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:bg-[#00000040] cursor-pointer">DRAMA</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">REALITY</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">CRIME</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">COMEDY</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">THRILLER</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
+                                    href="#">MOVIES</a>
+                                <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                    <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">ENGLISH</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">TAMIL</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">HINDI</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">ARABIC</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">RUSSIAN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">CHANNELS</a></li>
+                            <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
+                                    href="#">MUSIC</a>
+                                <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
+                                    <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">ENGLISH</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">TAMIL</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">HINDI</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">ARABIC</a>
+                                        </li>
+                                        <li class="py-1"><a href="#"
+                                                class="block text-[black] font-bold text-base uppercase hover:text-purple-700 cursor-pointer">RUSSIAN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">BUZZ</a></li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div>
-                        <button onclick="document.getElementById('modal').style.display='block'"><img class="w-[23px]"
-                                src="/Assets/images/setting.png" alt="setting" />
+                <div class="flex">
+                    <div class="flex items-center space-x-6 font-medium">
+
+                        <button onclick="document.getElementById('Search-modal').style.display='block'">
+                            <img class="w-[26px]" src="/Assets/images/search.png" alt="search" />
                         </button>
-                        <!-- onClick setting -->
-                        <div class="modal">
-                            <div class="space-y-5 cursor-pointer p-5 hidden bg-[#fff] shadow-2xl text-[black] w-[20rem] h-[40rem]"
-                                id="modal">
-                                <div class="flex space-x-10 items-center">
-                                    <h1 class="text-[1.3rem]">Theme Customizer</h1>
-                                    <span class="text-[35px] font-extralight"
-                                        onclick="document.getElementById('modal').style.display='none'" class="close"
-                                        title="Close Modal">&times;</span>
-                                </div>
-                                <hr>
 
-                                <h2 class="text-[17px]">Theme Variation</h2>
-                                <hr>
 
-                                <div class="flex space-x-2">
-                                    <input type="radio" id="light">
-                                    <label for="html">Light</label><br>
-                                    <input type="radio" id="dark">
-                                    <label for="css">Dark</label><br>
-                                </div>
-                                <hr>
+                        <div class="flex cursor-pointer">
+                            <button onclick="document.getElementById('list').style.display='block'">
+                                <img class="w-[26px]" src="/Assets/images/plus.png" alt="add" /></button>
+                            <h2 onclick="document.getElementById('list').style.display='block'">MY LIST</h2>
+                        </div>
 
-                                <h2>Theme Colors</h2>
-                                <hr>
-                                <div class="flex space-x-4">
-                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#6610f2]"></div>
-                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9c27b0]"></div>
-                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#09a257]"></div>
-                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9d3939]"></div>
+                        <div class="flex cursor-pointer">
+                            <button>
+                                <img class="w-[17px] h-[20px]" src="/Assets/images/power.png" alt="logout" />
+                            </button>
+                            <h2>LOGOUT</h2>
+                        </div>
+
+                        <div>
+                            <button onclick="document.getElementById('modal').style.display='block'"><img
+                                    class="w-[23px]" src="/Assets/images/setting.png" alt="setting" />
+                            </button>
+                            <!-- onClick setting -->
+                            <div class="modal">
+                                <div class="space-y-5 cursor-pointer p-5 hidden bg-[#fff] shadow-2xl text-[black] w-[20rem] h-[40rem]"
+                                    id="modal">
+                                    <div class="flex space-x-10 items-center">
+                                        <h1 class="text-[1.3rem]">Theme Customizer</h1>
+                                        <span class="text-[35px] font-extralight"
+                                            onclick="document.getElementById('modal').style.display='none'"
+                                            class="close" title="Close Modal">&times;</span>
+                                    </div>
+                                    <hr>
+
+                                    <h2 class="text-[17px]">Theme Variation</h2>
+                                    <hr>
+
+                                    <div class="flex space-x-2">
+                                        <input type="radio" id="light">
+                                        <label for="html">Light</label><br>
+                                        <input type="radio" id="dark">
+                                        <label for="css">Dark</label><br>
+                                    </div>
+                                    <hr>
+
+                                    <h2>Theme Colors</h2>
+                                    <hr>
+                                    <div class="flex space-x-4">
+                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#6610f2]"></div>
+                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9c27b0]"></div>
+                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#09a257]"></div>
+                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9d3939]"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+        </nav>
+
+        <div>
+
         </div>
-    </nav>
+    </header>
 
     <!-- SEARCH-MODAL -->
 
