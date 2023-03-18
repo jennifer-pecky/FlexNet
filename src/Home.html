@@ -21,15 +21,24 @@
         <nav class=" p-4 mx-auto">
             <div class="flex  justify-between">
                 <div class="flex space-x-8 items-center">
-                    <div class="flex space-x-2">
+
+                    <!-- hnadburger icon -->
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button">
+                            <img src="/Assets/images/icons8-menu-30.png" alt=""
+                                class=" w-6 h-6 text-gray-500 hover:text-green-500">
+                        </button>
+                    </div>
+                    <!-- website logo -->
+                    <div class="flex space-x-2 hidden md:flex">
                         <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
                         <h1 class="text-[#fff] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
                     </div>
-                    <div
-                        class="md:static text-[#fff] absolute bg-[#212529] min-h-[60vh] left-0 top-[10%] w-[40%] flex md:items-center  px-5">
-                        <ul class="flex space-x-6 md:flex-row flex-col md:gap-[4vw] gap-7">
+                    <div class="text-[#fff] px-5 hidden md:flex">
+                        <ul class="flex space-x-6 ">
                             <li class=""><a href="#home">HOME</a></li>
-                            <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer">
+                            <li
+                                class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer whitespace-nowrap">
                                 <a href="#">TV SHOWS</a>
                                 <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
                                     <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
@@ -51,8 +60,9 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer"><a
-                                    href="#">WEB SHOWS</a>
+                            <li
+                                class="group relative dropdown text-[#fff] hover:text-[#ffdede] cursor-pointer whitespace-nowrap">
+                                <a href="#">WEB SHOWS</a>
                                 <div class="group-hover:block  dropdown-menu absolute hidden h-auto top-[2rem]">
                                     <ul class="top-0 w-36 bg-[#fff] shadow px-6 py-8">
                                         <li class="py-1"><a href="#"
@@ -185,12 +195,39 @@
                     </div>
 
                 </div>
+
+                <div class="hidden mobile-menu">
+                    <ul class="">
+                        <li class="active"><a href="index.html"
+                                class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">HOME</a></li>
+                        <li><a href="#services"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">TV SHOWS</a>
+                        </li>
+                        <li><a href="#about"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">WEB SHOWS</a>
+                        </li>
+
+                        <li><a href="#contact"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">MOVIES
+                            </a></li>
+
+                        <li><a href="#contact"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">CHANNELS
+                            </a></li>
+
+                        <li><a href="#contact"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">MUSIC
+                            </a></li>
+
+                        <li><a href="#contact"
+                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">BUZZ
+                            </a></li>
+                    </ul>
+                </div>
             </div>
+
         </nav>
 
-        <div>
-
-        </div>
     </header>
 
     <!-- SEARCH-MODAL -->
