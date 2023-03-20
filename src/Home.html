@@ -22,13 +22,34 @@
             <div class="flex  justify-between">
                 <div class="flex space-x-8 items-center">
 
-                    <!-- hnadburger icon -->
-                    <div class="md:hidden flex items-center">
-                        <button class="mobile-menu-button">
-                            <img src="/Assets/images/icons8-menu-30.png" alt=""
-                                class=" w-6 h-6 text-gray-500 hover:text-green-500">
-                        </button>
+                    <div class="block md:hidden hamburger-menu">
+
+
+                        <div>
+                            <input id="menu__toggle" type="checkbox" />
+                            <label class="menu__btn" for="menu__toggle">
+                                <span></span>
+                            </label>
+                            <ul class="menu__box">
+                                <div class="flex space-x-2 ">
+                                    <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
+                                    <h1 class="text-[#fff] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
+                                </div>
+                                <li><a class="menu__item" href="#">HOME</a></li>
+                                <li><a class="menu__item" href="#">TV SHOWS</a></li>
+                                <li><a class="menu__item" href="#">WEB SHOWS</a></li>
+                                <li><a class="menu__item" href="#">MOVIES</a></li>
+                                <li><a class="menu__item" href="#">CHANNELS</a></li>
+                                <li><a class="menu__item" href="#">MUSIC</a></li>
+                                <li><a class="menu__item" href="#">BUZZ</a></li>
+                            </ul>
+                        </div>
+
+
                     </div>
+
+
+
                     <!-- website logo -->
                     <div class="flex space-x-2 hidden md:flex">
                         <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
@@ -196,34 +217,7 @@
 
                 </div>
 
-                <div class="hidden mobile-menu">
-                    <ul class="">
-                        <li class="active"><a href="index.html"
-                                class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">HOME</a></li>
-                        <li><a href="#services"
-                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">TV SHOWS</a>
-                        </li>
-                        <li><a href="#about"
-                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">WEB SHOWS</a>
-                        </li>
 
-                        <li><a href="#contact"
-                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">MOVIES
-                            </a></li>
-
-                        <li><a href="#contact"
-                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">CHANNELS
-                            </a></li>
-
-                        <li><a href="#contact"
-                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">MUSIC
-                            </a></li>
-
-                        <li><a href="#contact"
-                                class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">BUZZ
-                            </a></li>
-                    </ul>
-                </div>
             </div>
 
         </nav>
