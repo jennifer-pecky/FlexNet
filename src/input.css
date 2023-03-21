@@ -149,7 +149,7 @@ body {
     background-color: #212529;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     /* transition-duration: .25s; */
-    transition: s;
+    transition: 2s;
 }
 
 
@@ -174,6 +174,10 @@ body {
     color: white;
 }
 
+.carousel-inner img {
+    width: 100%;
+    height: 60%;
+}
 
 
 /* hshhshshhs */

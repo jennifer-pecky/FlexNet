@@ -19,10 +19,10 @@
 
 
 
-let x = document.querySelector('.menu-bar');
-let menu = document.querySelector('.dropdown-content');
+// let x = document.querySelector('.menu-bar');
+// let menu = document.querySelector('.dropdown-content');
 
-x.onclick = function () {
-    this.classList.toggle("change");
-    menu.classList.toggle("menu_change");
-}
+// x.onclick = function () {
+//     this.classList.toggle("change");
+//     menu.classList.toggle("menu_change");
+// }

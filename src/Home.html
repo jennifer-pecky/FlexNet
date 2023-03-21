@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/Assets/images/favicon.png.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -17,20 +18,17 @@
 </head>
 
 <body>
-    <header class="bg-[rgb(255,0,0)]">
+    <header class="bg-[rgb(255,0,0)] max-w-full">
         <nav class=" p-4 mx-auto">
             <div class="flex  justify-between">
                 <div class="flex space-x-8 items-center">
 
                     <div class="block md:hidden hamburger-menu">
-
-
                         <div>
                             <input id="menu__toggle" type="checkbox" />
                             <label class="menu__btn" for="menu__toggle">
                                 <span></span>
                             </label>
-
                             <ul class="menu__box">
                                 <!-- <div class="flex space-x-2 mb">
                                     <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
@@ -45,11 +43,7 @@
                                 <li><a class="menu__item" href="#">BUZZ</a></li>
                             </ul>
                         </div>
-
-
                     </div>
-
-
 
                     <!-- website logo -->
                     <div class="flex space-x-2 hidden md:flex">
@@ -811,16 +805,63 @@
                     <p class="text-[1rem] font-medium ">2023. WWW.FlixNet.in|All rights reserved</p>
                 </div>
             </div>
-
-
         </div>
-
 
     </div>
 
 
-    <script src=" /Assets/js/index.js">
-    </script>
+
+    <!-- carosuel section -->
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Assets/images/img-4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Assets/images/img-5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Assets/images/img-6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+
+
+    <script src=" /Assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
