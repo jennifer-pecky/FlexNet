@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="/Assets/images/favicon.png.jpg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40sADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/input.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
 
     <title>FlixNet</title>
@@ -31,10 +30,6 @@
                                 <span></span>
                             </label>
                             <ul class="menu__box">
-                                <!-- <div class="flex space-x-2 mb">
-                                    <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
-                                    <h1 class="text-[#fff] font-semibold text-2xl"><a href="#">FLIX-NET</a></h1>
-                                </div> -->
                                 <li class="active"><a class="menu__item" href="#">HOME</a></li>
                                 <li><a class="menu__item" href="#">TV SHOWS</a></li>
                                 <li><a class="menu__item" href="#">WEB SHOWS</a></li>
@@ -45,7 +40,6 @@
                             </ul>
                         </div>
                     </div>
-
                     <!-- website logo -->
                     <div class="flex space-x-2 hidden md:flex">
                         <img class="w-[35px]" src="/Assets/images/play-button.png" alt="" />
@@ -171,54 +165,54 @@
                             <h2>LOGOUT</h2>
                         </div>
 
-                        <div>
-                            <button onclick="document.getElementById('modal').style.display='block'"><img
-                                    class="w-[23px]" src="/Assets/images/setting.png" alt="setting" />
-                            </button>
-                            <!-- onClick setting -->
-                            <div class="modal">
-                                <div class="space-y-5 cursor-pointer p-5 hidden bg-[#fff] shadow-2xl text-[black] w-[20rem] h-[40rem]"
-                                    id="modal">
-                                    <div class="flex space-x-10 items-center">
-                                        <h1 class="text-[1.3rem]">Theme Customizer</h1>
-                                        <span class="text-[35px] font-extralight"
-                                            onclick="document.getElementById('modal').style.display='none'"
-                                            class="close" title="Close Modal">&times;</span>
-                                    </div>
-                                    <hr>
+                        <button onclick="document.getElementById('setting-modal').style.display='block'"><img
+                                class="w-[23px]" src="/Assets/images/setting.png" alt="setting" />
+                        </button>
+                        <!-- onClick setting -->
+                        <div class="modal">
+                            <div class="space-y-5 cursor-pointer hidden p-5 bg-[#fff] shadow-2xl text-[black] w-[20rem] h-[40rem]"
+                                id="setting-modal">
+                                <div class="flex space-x-10 items-center">
+                                    <h1 class="text-[1.3rem]">Theme Customizer</h1>
+                                    <span class="text-[35px] font-extralight"
+                                        onclick="document.getElementById('setting-modal').style.display='none'"
+                                        class="close" title="Close Modal">&times;</span>
+                                </div>
+                                <hr>
 
-                                    <h2 class="text-[17px]">Theme Variation</h2>
-                                    <hr>
+                                <h2 class="text-[17px]">Theme Variation</h2>
+                                <hr>
 
-                                    <div class="flex space-x-2">
-                                        <input type="radio" id="light">
-                                        <label for="html">Light</label><br>
-                                        <input type="radio" id="dark">
-                                        <label for="css">Dark</label><br>
-                                    </div>
-                                    <hr>
-
-                                    <h2>Theme Colors</h2>
-                                    <hr>
-                                    <div class="flex space-x-4">
-                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#6610f2]"></div>
-                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9c27b0]"></div>
-                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#09a257]"></div>
-                                        <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9d3939]"></div>
-                                    </div>
+                                <div class="flex space-x-2">
+                                    <input type="radio" id="light">
+                                    <label for="html">Light</label><br>
+                                    <input type="radio" id="dark">
+                                    <label for="css">Dark</label><br>
+                                </div>
+                                <hr>
+                                <!-- 
+                                <h2>Theme Colors</h2> -->
+                                <hr>
+                                <div class="flex space-x-4">
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#6610f2]"></div>
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9c27b0]"></div>
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#09a257]"></div>
+                                    <div class="w-[44px] h-[49px] rounded-[10px] bg-[#9d3939]"></div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-
                 </div>
-
-
             </div>
-
         </nav>
-
     </header>
+
+
+
+    <div>
+
+    </div>
 
     <!-- SEARCH-MODAL -->
 
@@ -433,6 +427,7 @@
                                     kept
                                     upping the stakes and then delivering, giving <br> viewers wonderful.</p>
                     </div>
+
                 </div>
 
                 <div class=" bg-[#fff] max-h-full h-auto max-w-[50%] w-[50%]">
@@ -812,79 +807,105 @@
 
 
 
-    <!-- carosuel section -->
-    <section>
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                <li data-target="#demo" data-slide-to="3"></li>
-                <li data-target="#demo" data-slide-to="4"></li>
-                <li data-target="#demo" data-slide-to="5"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/Assets/images/01.png" alt="Los Angeles" width="1100">
-                    <div class="carousel-caption">
-                        <h3>First slide label</h3>
-                        <p>Some reprenstative placeholder content for the first slide</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/02.png" alt="Chicago" width="1100">
-                    <div class="carousel-caption">
-                        <h3>Second slide label</h3>
-                        <p>Some reprenstative placeholder content for the second slide</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/03.png" alt="New York" width="1100">
-                    <div class="carousel-caption">
-                        <h3>Third slide label</h3>
-                        <p>Some reprenstative placeholder content for the third slide</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/04.png" alt="New York" width="1100">
-                    <div class="carousel-caption">
-                        <h3>Fourth slide</h3>
-                        <p>Some reprenstative placeholder content for the fourth slide</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/Assets/images/05.png" alt="New York" width="1100">
-                    <div class="carousel-caption">
-                        <h3>Fifth slide</h3>
-                        <p>Some reprenstative placeholder content for the fifth slide</p>
-                    </div>
+    <!--carousel section -->
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="/Assets/images/01.png" alt=""></div>
+            <div class="swiper-slide"><img src="/Assets/images/02.png" alt=""></div>
+            <div class="swiper-slide"><img src="/Assets/images/03.png" alt=""></div>
+            <div class="swiper-slide"><img src="/Assets/images/04.png" alt=""></div>
+            <div class="swiper-slide"><img src="/Assets/images/05.png" alt=""></div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+    <!-- <section>
+
+        <section class="mt-3">
+            <div>
+                <div class="flex">
+                    <h1 class="text-[1.6rem] font-medium">Trending In Movies</h1>
+                    <button class="bg-[#ff0000] text-[#fff] p-3 rounded-[10px]">MORE VIDEOS</button>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </section>
+        </section>
+    </section> -->
 
     <!-- Main section -->
-    <section>
-        <div>
-            <div class="flex justify-between">
-                <h1>Trending In Movies</h1>
-                <button class="bg-[#ff0000] text-[#fff]">MORE VIDEOS</button>
-            </div>
-        </div>
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     <script src=" /Assets/js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            speed: 400,
+            // spaceBetween: 100,
+            autoplay: {
+                delay: 3000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
 </body>
 
 </html>
