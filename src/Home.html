@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/src/input.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src=" /Assets/js/index.js" defer></script>
 
 
     <title>FlixNet</title>
@@ -208,11 +209,6 @@
         </nav>
     </header>
 
-
-
-    <div>
-
-    </div>
 
     <!-- SEARCH-MODAL -->
 
@@ -805,8 +801,6 @@
 
     </div>
 
-
-
     <!--carousel section -->
 
     <!-- Slider main container -->
@@ -814,11 +808,11 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img src="/Assets/images/01.png" alt=""></div>
-            <div class="swiper-slide"><img src="/Assets/images/02.png" alt=""></div>
-            <div class="swiper-slide"><img src="/Assets/images/03.png" alt=""></div>
-            <div class="swiper-slide"><img src="/Assets/images/04.png" alt=""></div>
-            <div class="swiper-slide"><img src="/Assets/images/05.png" alt=""></div>
+            <div class="swiper-slide"><img class="w-[3401px]" src="/Assets/images/01.png" alt=""></div>
+            <div class="swiper-slide"><img class="w-[3401px]" src="/Assets/images/02.png" alt=""></div>
+            <div class="swiper-slide"><img class="w-[3401px]" src="/Assets/images/03.png" alt=""></div>
+            <div class="swiper-slide"><img class="w-[3401px]" src="/Assets/images/04.png" alt=""></div>
+            <div class="swiper-slide"><img class="w-[3401px]" src="/Assets/images/05.png" alt=""></div>
             ...
         </div>
         <!-- If we need pagination -->
@@ -834,25 +828,22 @@
 
 
 
-    <!-- <section>
 
-        <section class="mt-3">
-            <div>
-                <div class="flex">
-                    <h1 class="text-[1.6rem] font-medium">Trending In Movies</h1>
-                    <button class="bg-[#ff0000] text-[#fff] p-3 rounded-[10px]">MORE VIDEOS</button>
-                </div>
+
+    <section class="mt-3">
+        <div>
+            <div class="flex">
+                <h1 class="text-[1.6rem] font-medium">Trending In Movies</h1>
+                <button class="bg-[#ff0000] text-[#fff] p-2 rounded-[8px]">MORE VIDEOS</button>
             </div>
-        </section>
-    </section> -->
+        </div>
 
-    <!-- Main section -->
+        <!-- swiper-caro -->
 
+        <div class="p-5">
 
-
-
-
-
+        </div>
+    </section>
 
 
 
@@ -871,7 +862,15 @@
 
 
 
-    <script src=" /Assets/js/index.js"></script>
+
+
+
+
+
+
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
@@ -881,30 +880,26 @@
 
     <script>
         const swiper = new Swiper('.swiper', {
-            // Optional parameters
-            speed: 400,
-            // spaceBetween: 100,
+            speed: 500,
             autoplay: {
-                delay: 3000,
+                delay: 5000,
             },
 
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
             },
 
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
 
-            // And if we need scrollbar
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
         });
     </script>
+
 
 </body>
 

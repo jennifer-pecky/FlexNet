@@ -1,7 +1,2 @@
-"use strict"
+// alert("hey you")
 
-
-
-
-
-// 
